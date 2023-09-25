@@ -42,14 +42,14 @@ void QuizApplication::cProgramming()
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "Q1: how many memory allocate in int data type" << endl;
         cout << "1:- 4byte\n2:- 1byte\n3:- 2byte\n4:- 8byte" << endl;
-       cout << "Enter your iChoice" << endl;
+        cout << "Enter your iChoice" << endl;
         cin >> iChoice;
 
         if (iChoice == 1)
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -70,7 +70,7 @@ void QuizApplication::cProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -91,7 +91,7 @@ void QuizApplication::cProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -112,7 +112,7 @@ void QuizApplication::cProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -133,7 +133,7 @@ void QuizApplication::cProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -144,7 +144,13 @@ void QuizApplication::cProgramming()
         {
             cout << "wronge answer" << endl;
         }
-        printf("You Have Earn Total %d Coin\n", iSum);
+        // File Handling
+        FILE *fp;
+        fp = fopen("Score.txt", "w");
+        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+
+        fclose(fp);
+        cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
         cout << "###################### END OF THE QUIZ #########################" << endl;
@@ -163,14 +169,14 @@ void QuizApplication::cpp()
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "Q1: Which of the following features must be supported by any programming language to become a pure object-oriented programming language?" << endl;
         cout << "1:- Encapsulation\n2:- Inheritance\n3:- Polymorphism\n4:- None of the above" << endl;
-       cout << "Enter your iChoice" << endl;
+        cout << "Enter your iChoice" << endl;
         cin >> iChoice;
 
         if (iChoice == 4)
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -191,7 +197,7 @@ void QuizApplication::cpp()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -212,7 +218,7 @@ void QuizApplication::cpp()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -233,7 +239,7 @@ void QuizApplication::cpp()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -254,7 +260,7 @@ void QuizApplication::cpp()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -265,7 +271,13 @@ void QuizApplication::cpp()
         {
             cout << "wronge answer" << endl;
         }
-        printf("You Have Earn Total %d Coin\n", iSum);
+        // File Handling
+        FILE *fp;
+        fp = fopen("Score.txt", "w");
+        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+
+        fclose(fp);
+        cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
         cout << "###################### END OF THE QUIZ #########################" << endl;
@@ -284,14 +296,14 @@ void QuizApplication::javaProgramming()
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "Q1:  Which of the following is not a Java features?" << endl;
         cout << "1:- Dynamic\n2:- Architecture Neutral \n3:- Use of pointers \n4:- Object-oriented" << endl;
-      cout << "Enter your iChoice" << endl;
+        cout << "Enter your iChoice" << endl;
         cin >> iChoice;
 
         if (iChoice == 3)
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -312,7 +324,7 @@ void QuizApplication::javaProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -333,7 +345,7 @@ void QuizApplication::javaProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -354,7 +366,7 @@ void QuizApplication::javaProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -368,14 +380,14 @@ void QuizApplication::javaProgramming()
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "Q5: Which of the following is an immediate subclass of the Panel class?" << endl;
         cout << "1:- Applet class\n2:- Window class\n3:- Frame class\n4:- Dialog class" << endl;
-      cout << "Enter your iChoice" << endl;
+        cout << "Enter your iChoice" << endl;
         cin >> iChoice;
 
         if (iChoice == 3)
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -386,7 +398,13 @@ void QuizApplication::javaProgramming()
         {
             cout << "wronge answer" << endl;
         }
-        printf("You Have Earn Total %d Coin\n", iSum);
+        // File Handling
+        FILE *fp;
+        fp = fopen("Score.txt", "w");
+        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+
+        fclose(fp);
+        cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
         cout << "###################### END OF THE QUIZ #########################" << endl;
@@ -414,7 +432,7 @@ void QuizApplication::dsa()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -435,7 +453,7 @@ void QuizApplication::dsa()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -456,7 +474,7 @@ void QuizApplication::dsa()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -477,7 +495,7 @@ void QuizApplication::dsa()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -499,7 +517,7 @@ void QuizApplication::dsa()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -510,7 +528,13 @@ void QuizApplication::dsa()
         {
             cout << "wronge answer" << endl;
         }
-        printf("You Have Earn Total %d Coin\n", iSum);
+        // File Handling
+        FILE *fp;
+        fp = fopen("Score.txt", "w");
+        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+
+        fclose(fp);
+        cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
         cout << "###################### END OF THE QUIZ #########################" << endl;
@@ -529,14 +553,14 @@ void QuizApplication::phpProgramming()
         cout << "--------------------------------------------------------------------------------" << endl;
         cout << "Q1:  The term PHP is an acronym for PHP:_______________." << endl;
         cout << "1:- Hypertext Preprocessor\n2:- Hypertext multiprocessor \n3:-  Hypertext markup Preprocessor \n4:- Hypertune Preprocessor" << endl;
-      cout << "Enter your iChoice" << endl;
+        cout << "Enter your iChoice" << endl;
         cin >> iChoice;
 
         if (iChoice == 1)
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -557,7 +581,7 @@ void QuizApplication::phpProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -578,7 +602,7 @@ void QuizApplication::phpProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -599,7 +623,7 @@ void QuizApplication::phpProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -620,7 +644,7 @@ void QuizApplication::phpProgramming()
         {
             iSum = iSum + iMarks;
             cout << "this is true answer" << endl;
-            cout<<"You have earn "<<iSum<<" coins"<<endl;
+            cout << "You have earn " << iSum << " coins" << endl;
         }
         else if (iOption < iChoice)
         {
@@ -631,7 +655,13 @@ void QuizApplication::phpProgramming()
         {
             cout << "wronge answer" << endl;
         }
-        printf("You Have Earn Total %d Coin\n", iSum);
+        // File Handling
+        FILE *fp;
+        fp = fopen("Score.txt", "w");
+        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+
+        fclose(fp);
+        cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
         cout << "###################### END OF THE QUIZ #########################" << endl;

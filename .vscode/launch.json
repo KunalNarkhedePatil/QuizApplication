@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Kunal Narkhede/Desktop/Data/PD Data/QuizApplication",
-      "program": "c:/Users/Kunal Narkhede/Desktop/Data/PD Data/QuizApplication/build/Debug/outDebug",
+      "cwd": "f:/QuizApplication",
+      "program": "f:/QuizApplication/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
