@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <fcntl.h>
 void cProgramming()
 
 {
@@ -364,11 +365,18 @@ void CPP()
 			printf("wronge answer\n");
 		}
 		// File Handling
-		FILE *fp;
-		fp = fopen("myfile2.txt", "w");
-		fprintf(fp, "Your CPP Quiz Score is :%d\n", sum);
+		int fd = 0;
+		char Data[25] = {'\0'};
+		fd = open("myfile2.txt", O_WRONLY);
 
-		fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your c programming test score is %d", sum);
+		write(fd, Data, strlen(Data));
+		close(fd);
+
 		printf("You Have Earn Total %d Coin :\n", sum);
 		printf("--------------------------------------------------------------------------------\n");
 
@@ -502,11 +510,18 @@ void DSA()
 		}
 
 		// File Handling
-		FILE *fp;
-		fp = fopen("myfile2.txt", "w");
-		fprintf(fp, "Your DSA Quiz Score is :%d\n", sum);
+		// File Handling
+		int fd = 0;
+		char Data[25] = {'\0'};
+		fd = open("myfile2.txt", O_WRONLY);
 
-		fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your DSA test score is %d", sum);
+		write(fd, Data, strlen(Data));
+		close(fd);
 		printf("You Have Earn Total %d Coin :\n", sum);
 		printf("--------------------------------------------------------------------------------\n");
 
@@ -640,11 +655,18 @@ void javaProgramming()
 		}
 
 		// File Handling
-		FILE *fp;
-		fp = fopen("myfile2.txt", "w");
-		fprintf(fp, "Your JAVA Quiz Score is :%d\n", sum);
+		// File Handling
+		int fd = 0;
+		char Data[25] = {'\0'};
+		fd = open("myfile2.txt", O_WRONLY);
 
-		fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your java programming test score is %d", sum);
+		write(fd, Data, strlen(Data));
+		close(fd);
 		printf("You Have Earn Total %d Coin :\n", sum);
 		printf("--------------------------------------------------------------------------------\n");
 
@@ -777,11 +799,18 @@ void phpProgramming()
 			printf("wronge answer\n");
 		}
 		// File Handling
-		FILE *fp;
-		fp = fopen("myfile2.txt", "w");
-		fprintf(fp, "Your PHP Quiz Score is :%d\n", sum);
+		// File Handling
+		int fd = 0;
+		char Data[25] = {'\0'};
+		fd = open("myfile2.txt", O_WRONLY);
 
-		fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your php test score is %d", sum);
+		write(fd, Data, strlen(Data));
+		close(fd);
 		printf("You Have Earn Total %d Coin :\n", sum);
 		printf("--------------------------------------------------------------------------------\n");
 
@@ -807,9 +836,9 @@ int main()
 	printf("Enter your password:\n");
 	scanf("%s", &password);
 
-	if (strcmp(username, "Kunal_Narkhede") == 0)
+	if (strcmp(username, "Admin") == 0)
 	{
-		if (strcmp(password, "kunal@123") == 0)
+		if (strcmp(password, "admin") == 0)
 		{
 			printf("\nWelcome.Login Success! \n");
 			printf("Select Any Language\n");

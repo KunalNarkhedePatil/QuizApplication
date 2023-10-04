@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include<fcntl.h>
 using namespace std;
 
 class QuizApplication
@@ -9,6 +10,7 @@ public:
     int iNo;
     const int iMarks = 2;
     int iSum;
+    char Data[30];
 
     QuizApplication();
     void info();
@@ -145,11 +147,16 @@ void QuizApplication::cProgramming()
             cout << "wronge answer" << endl;
         }
         // File Handling
-        FILE *fp;
-        fp = fopen("Score.txt", "w");
-        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+		int fd = 0;
+		fd = open("Score.txt", O_WRONLY);
 
-        fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your c programming test score is %d", iSum);
+		write(fd, Data, strlen(Data));
+		close(fd);
         cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
@@ -272,11 +279,16 @@ void QuizApplication::cpp()
             cout << "wronge answer" << endl;
         }
         // File Handling
-        FILE *fp;
-        fp = fopen("Score.txt", "w");
-        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+		int fd = 0;
+		fd = open("Score.txt", O_WRONLY);
 
-        fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your cpp test score is %d", iSum);
+		write(fd, Data, strlen(Data));
+		close(fd);
         cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
@@ -399,11 +411,16 @@ void QuizApplication::javaProgramming()
             cout << "wronge answer" << endl;
         }
         // File Handling
-        FILE *fp;
-        fp = fopen("Score.txt", "w");
-        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+		int fd = 0;
+		fd = open("Score.txt", O_WRONLY);
 
-        fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your java programming test score is %d", iSum);
+		write(fd, Data, strlen(Data));
+		close(fd);
         cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
@@ -529,11 +546,16 @@ void QuizApplication::dsa()
             cout << "wronge answer" << endl;
         }
         // File Handling
-        FILE *fp;
-        fp = fopen("Score.txt", "w");
-        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+		int fd = 0;
+		fd = open("Score.txt", O_WRONLY);
 
-        fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your DSA test score is %d", iSum);
+		write(fd, Data, strlen(Data));
+		close(fd);
         cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
@@ -656,11 +678,16 @@ void QuizApplication::phpProgramming()
             cout << "wronge answer" << endl;
         }
         // File Handling
-        FILE *fp;
-        fp = fopen("Score.txt", "w");
-        fprintf(fp, "Your CPP Quiz Score is :%d\n", iSum);
+		int fd = 0;
+		fd = open("Score.txt", O_WRONLY);
 
-        fclose(fp);
+		if (fd == -1)
+		{
+			printf("file is unable to open");
+		}
+		sprintf(Data, "Your php test score is %d", iSum);
+		write(fd, Data, strlen(Data));
+		close(fd);
         cout << "You Have Earn Total " << iSum << " Coin" << endl;
         cout << "--------------------------------------------------------------------------------" << endl;
 
